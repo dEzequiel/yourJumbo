@@ -1,0 +1,29 @@
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+// Component Pages
+import { RegisterComponent } from "./register/register.component";
+import { LoginComponent } from "./login/login.component";
+
+const routes: Routes = [
+  {
+    path: 'signin', loadChildren: () => import('./auth/signin/signin.module').then(m => m.SigninModule)
+  },
+  {
+    path: 'errors', loadChildren: () => import('./auth/errors/errors.module').then(m => m.ErrorsModule)
+  },
+  {
+    path: "register",
+    component: RegisterComponent
+  },
+  {
+    path: "login",
+    component: LoginComponent
+  }
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class AccountRoutingModule { }

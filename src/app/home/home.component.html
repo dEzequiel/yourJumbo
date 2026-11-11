@@ -1,0 +1,201 @@
+<div class="landing-page">
+
+    <!-- Header -->
+    <header class="landing-header">
+        <div class="container">
+            <div class="header-main">
+
+                <!-- Brand -->
+                <a routerLink="/" class="brand-logo" aria-label="yourJumbo">
+                    <img src="assets/images/logo-yj-pos.png" alt="yourJumbo" class="brand-img" width="249" height="44">
+                </a>
+
+                <!-- Contact -->
+                <div class="header-contact">
+                    <span class="contact-item">
+                        <i class="mdi mdi-phone"></i>
+                        Teléfonos de Contacto
+                    </span>
+                    <a class="contact-item" href="mailto:agencias@yourjumbo.com">
+                        <i class="mdi mdi-email"></i>
+                        agencias&#64;yourjumbo.com
+                    </a>
+                </div>
+
+                <!-- Actions -->
+                <div class="header-actions">
+                    <button type="button" class="btn-pill btn-pill-primary" (click)="openLoginModal()">Acceder</button>
+                    <a routerLink="/auth/register" class="btn-pill btn-pill-secondary">Registrarse</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Nav -->
+        <nav class="landing-nav">
+            <div class="container">
+                <ul>
+                    <li><button type="button" class="nav-btn">Servicio</button></li>
+                    <li><button type="button" class="nav-btn">Producto</button></li>
+                    <li><button type="button" class="nav-btn">Tecnología</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero-section">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-line hero-light">Plataforma de</span>
+                    <span class="hero-line hero-bold">Paquetes turísticos DMC</span>
+                    <span class="hero-line">para profesionales del</span>
+                    <span class="hero-line">sector de viajes</span>
+                </h1>
+            </div>
+
+            <div class="hero-visual">
+                <picture>
+                    <source srcset="assets/images/hero-img-v2.webp" type="image/webp">
+                    <img src="assets/images/hero-img-v2.png" alt="Servicio, producto y tecnología" class="hero-img" width="1600" height="900">
+                </picture>
+            </div>
+        </div>
+
+        <div class="hero-stats-wrap">
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-label">circuitos</span>
+                    <span class="stat-value">+3000</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">receptivos</span>
+                    <span class="stat-value">+500</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">países</span>
+                    <span class="stat-value">+123</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propuestas -->
+    <section class="proposals-section">
+        <div class="container">
+            <h2 class="proposals-title">Tres propuestas que se complementan</h2>
+            <p class="proposals-subtitle">Juntas, sostienen nuestro modelo de distribución de paquetes turísticos DMC</p>
+
+            <div class="proposals-grid">
+                <!-- Servicio -->
+                <article class="proposal-card">
+                    <div class="proposal-image-wrap">
+                        <img src="assets/images/homeservice.png" alt="Servicio" class="proposal-image" width="600" height="340">
+                    </div>
+                    <div class="proposal-body">
+                        <h3 class="proposal-name">Servicio</h3>
+                        <ul class="proposal-list">
+                            <li>Gestión operativa de paquetes DMC y receptivos</li>
+                            <li>Un interlocutor único para acceder a receptivos de todo el mundo</li>
+                            <li>Call center en España y LATAM</li>
+                            <li>Pagos locales con TPVs y soluciones por mercado</li>
+                            <li>Una única moneda de pago y divisa asegurada</li>
+                            <li>Asistencia 24/7 en destino, en español</li>
+                        </ul>
+                        <a routerLink="/servicio" class="proposal-link">Ver el servicio</a>
+                    </div>
+                </article>
+
+                <!-- Producto -->
+                <article class="proposal-card">
+                    <div class="proposal-image-wrap">
+                        <img src="assets/images/homeproduct.png" alt="Producto" class="proposal-image" width="600" height="340">
+                    </div>
+                    <div class="proposal-body">
+                        <h3 class="proposal-name">Producto</h3>
+                        <ul class="proposal-list">
+                            <li>Circuitos</li>
+                            <li>Viajes independientes en tren, avión, autobús o coche</li>
+                            <li>Hoteles, traslados y excursiones</li>
+                            <li>Safaris y trekking</li>
+                            <li>Combinados de varios países</li>
+                            <li>Por tipo de viajero: novios, familias y seniors</li>
+                            <li>Por temática: cultura, naturaleza, arqueología, viajes privados, grupos reducidos y lujo</li>
+                        </ul>
+                        <a routerLink="/producto" class="proposal-link">Ver el producto</a>
+                    </div>
+                </article>
+
+                <!-- Tecnología -->
+                <article class="proposal-card">
+                    <div class="proposal-image-wrap">
+                        <img src="assets/images/hometech.png" alt="Tecnología" class="proposal-image" width="600" height="340">
+                    </div>
+                    <div class="proposal-body">
+                        <h3 class="proposal-name">Tecnología</h3>
+                        <ul class="proposal-list">
+                            <li>Web multidivisa y multidioma</li>
+                            <li>Marca blanca para touroperadores</li>
+                            <li>Integraciones XML y API</li>
+                            <li>Itinerarios detallados</li>
+                            <li>Presupuestos, resumen de reserva y voucher personalizados</li>
+                            <li>Búsqueda y comparación de programas</li>
+                            <li>Añade noches extra, excursiones y vuelos</li>
+                        </ul>
+                        <a routerLink="/tecnologia" class="proposal-link">Ver la plataforma</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aliado banner -->
+    <section class="ally-banner">
+        <div class="ally-banner-bg"></div>
+        <div class="ally-banner-content">
+            <h2 class="ally-banner-title">
+                Tu nuevo <strong>aliado</strong> para distribuir paquetes<br>
+                turísticos de receptivos en español
+            </h2>
+            <a routerLink="/contacto" class="ally-banner-btn">¿Hablamos?</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="landing-footer">
+        <div class="container">
+            <div class="footer-main">
+                <a routerLink="/" class="footer-brand" aria-label="yourJumbo">
+                    <img src="assets/images/logo-yj-pos.png" alt="yourJumbo" class="footer-brand-img" width="249" height="44">
+                </a>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Nosotros</h4>
+                    <ul class="footer-links">
+                        <li><a routerLink="/quienes-somos">Quienes Somos</a></li>
+                        <li><a routerLink="/contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Información Legal</h4>
+                    <ul class="footer-links">
+                        <li><a routerLink="/avisos-legales">Avisos legales</a></li>
+                        <li><a routerLink="/politica-cookies">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    <strong>yourjumbo</strong> yourjumbo.com - Agencia de viajes mayorista AVBAL/657 - Todos los derechos reservados
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login modal -->
+    <app-login-modal [isOpen]="isLoginModalOpen" (close)="closeLoginModal()"></app-login-modal>
+
+</div>

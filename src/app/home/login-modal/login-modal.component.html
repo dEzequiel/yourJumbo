@@ -1,0 +1,30 @@
+<div class="login-modal" *ngIf="isOpen" (click)="onBackdropClick()">
+    <div class="login-modal-dialog" (click)="onDialogClick($event)">
+        <button type="button" class="login-modal-close" (click)="close.emit()" aria-label="Cerrar">
+            <i class="mdi mdi-close"></i>
+        </button>
+
+        <div class="login-modal-header">
+            <img src="assets/images/logo-yj-pos.png" alt="yourJumbo" class="login-modal-logo" width="180" height="32">
+            <p class="login-modal-lead">Accede a tu cuenta de agente</p>
+        </div>
+
+        <form class="login-modal-form" (submit)="$event.preventDefault()">
+            <div class="login-modal-field">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" class="form-control" placeholder="agencias@yourjumbo.com" [(ngModel)]="email" name="email" required>
+            </div>
+
+            <div class="login-modal-field">
+                <label for="login-password">Contraseña</label>
+                <input type="password" id="login-password" class="form-control" placeholder="••••••••" [(ngModel)]="password" name="password" required>
+            </div>
+
+            <button type="submit" class="login-modal-submit" routerLink="/auth/login">Iniciar sesión</button>
+        </form>
+
+        <div class="login-modal-footer">
+            <a routerLink="/auth/pass-reset" class="login-modal-link">¿Has olvidado tu contraseña?</a>
+        </div>
+    </div>
+</div>
